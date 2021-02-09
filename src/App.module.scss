@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background: $secondary url('./assets/appbg.jpg') no-repeat center center/cover;
+  height: $primaryViewport;
+  color: $primary;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.AppContainer {
+  max-width: $secondarySize * 11;
+  margin: auto;
+  padding: 0 $primarySize *2;
+
+}
+
+
+

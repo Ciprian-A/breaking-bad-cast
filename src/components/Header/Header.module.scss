@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+header {
+  height: $secondarySize * 2;
+}
+header img {
+  width: $secondarySize * 2;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

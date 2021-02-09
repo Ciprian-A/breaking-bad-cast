@@ -1,0 +1,18 @@
+@import '../../variables.scss';
+
+.search {
+  height: $secondarySize;
+}
+input[type='text'] {
+  display: block;
+  padding: $primarySize;
+  font-size: $primarySize * 2;
+  border: 0;
+  border-radius: $primarySize / 2;
+  width: $primaryPercent / 1.65;
+  margin: auto;
+
+  &::placeholder {
+    color: $quaternary;
+  }
+}

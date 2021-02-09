@@ -1,0 +1,54 @@
+@import '../../variables.scss';
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: $secondarySize * 3;
+  perspective: $secondarySize * 4;
+
+  &:hover .cardInner {
+    transform: rotateY(180deg);
+  }
+
+  h1 {
+    font-size: $secondarySize / 4;
+    border-bottom: 1px $primary solid;
+    padding-bottom: $primarySize;
+    margin-bottom: $primarySize;
+  }
+
+  img {
+    width: $primaryPercent;
+    height: $secondarySize * 3;
+    object-fit: cover;
+  }
+
+  li {
+    list-style: none;
+    padding-bottom: $primarySize;
+  }
+
+}
+
+.cardInner {
+  position: relative;
+  width: $primaryPercent;
+  height: $primaryPercent;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cardFront, .cardBack {
+  position: absolute;
+  width: $primaryPercent;
+  height: $primaryPercent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cardBack {
+  background-color: $tertiary;
+  color: $primary;
+  padding: $primarySize * 2;
+  transform: rotateY(180deg);
+}
+
