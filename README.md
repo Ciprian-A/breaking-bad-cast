@@ -1,3 +1,6 @@
+# Breaking Bad Cast App
+This is an app that allows you to search for the main characters of the famous tv-series.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
